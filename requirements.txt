@@ -1,0 +1,15 @@
+streamlit
+streamlit_option_menu
+glob
+pandas
+plotnine
+plotly.express
+plotly.graph_objects
+plotly.subplots
+datetime
+folium
+json
+branca.colormap
+calendar
+locale
+PIL
