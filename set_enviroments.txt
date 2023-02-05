@@ -1,0 +1,7 @@
+# Crear entorno desde la carpeta practicaOD_VD
+conda create -n practicaOD_VD
+conda activate practicaOD_VD
+conda install beautifulsoup4 pandas==1.4.2 requests lxml selenium
+pip install folium==0.12.0 branca==0.3.1
+pip install streamlit==1.17.0 plotly==5.6.0 plotnine==0.10.1 datetime==5.0
+pip install streamlit_option_menu==0.3.2
