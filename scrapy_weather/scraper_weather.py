@@ -114,13 +114,9 @@ def get_weather_daily_city_years(city, state, abbreviation_state, year_init, yea
         df_weather_city = pd.concat(list_weather_city).reset_index(drop=True)
         df_weather_city.to_csv('data\weather_' + abbreviation_state + '.csv', index = False)
     except:
-        df_weather_city = pd.DataFrame()
-    
-    if df_weather_city.shape[0] > 0:
-        return df_weather_city
-    else:
         print('No se han extraído datos para la ciudad de ' + city + ' (' + state + ')')
         
+    
 
 states_capital_eeuu = pd.read_csv('data\capital_eeuu\eeuu_states_capital.csv')
 
