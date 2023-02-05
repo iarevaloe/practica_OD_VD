@@ -715,7 +715,7 @@ elif selected == 'Precipitaciones':
                 
                 
                 rf_comparacion_radio_mensual = st.radio(label='**Precipitaciones mensuales**',
-                                                       options=['mean', 'max'],
+                                                       options=['mean', 'max', 'sum'],
                                                        key='rb_rf',
                                                        format_func=functions_2.get,
                                                        horizontal=True,
