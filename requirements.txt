@@ -6,7 +6,7 @@ plotnine
 plotly
 datetime
 folium
-branca.colormap
+branca
 calendar
 locale
 PIL
