@@ -665,7 +665,7 @@ elif selected == 'Precipitaciones':
             with st.expander('Ver datos mensuales'):
                 
                 evolucion_rf_radio_mensual = st.radio(label='**Precipitaciones mensuales (mm/h)**',
-                                                       options=['mean','max'],
+                                                       options=['mean','max','sum'],
                                                        key='rb_rf_evolucion',
                                                        format_func=functions_2.get,
                                                        horizontal=True,
