@@ -22,7 +22,7 @@ from PIL import Image
 #locale.setlocale(locale.LC_ALL, 'esp')
 
 capital_eeuu = pd.read_csv('scrapy_weather/data/capital_eeuu/eeuu_states_capital.csv')
-weather_eeuu = pd.read_csv('scrapy_weather\\data\\data_visualization\\weather_eeuu.csv')
+weather_eeuu = pd.read_csv('scrapy_weather/data/data_visualization/weather_eeuu.csv')
 
 weather_eeuu['date'] = pd.to_datetime(weather_eeuu['date'], format='%Y-%m-%d').dt.date
 weather_eeuu['false_date'] = pd.to_datetime(weather_eeuu['false_date'], format='%Y-%m-%d').dt.date
@@ -137,7 +137,7 @@ if selected == 'Introducción':
         st.markdown('<br><br>', unsafe_allow_html=True)
         st.image(image_weather, caption=None, use_column_width='auto' )
         
-        image_weather_underground = Image.open('visualization\\image\\weather_underground.png')
+        image_weather_underground = Image.open('visualization/image/weather_underground.png')
         st.markdown('<br><br>', unsafe_allow_html=True)
         st.image(image_weather_underground, caption=None, use_column_width='auto' )
 
@@ -760,7 +760,7 @@ elif selected == 'Mapas':
     
     if selected_map == 'Mapa del mundo':
     
-        with open('visualization\\data\\us-states.json', 'r', encoding = 'utf-8') as file:
+        with open('visualization/data/us-states.json', 'r', encoding = 'utf-8') as file:
             geojson_eeuu = json.load(file)
     
         with st.container():
