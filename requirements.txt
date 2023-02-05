@@ -3,9 +3,7 @@ streamlit
 streamlit_option_menu
 pandas
 plotnine
-plotly.express
-plotly.graph_objects
-plotly.subplots
+plotly
 datetime
 folium
 branca.colormap
