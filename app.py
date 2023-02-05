@@ -7,7 +7,6 @@ Created on Mon Jan 30 09:55:10 2023
 
 import streamlit as st
 from streamlit_option_menu import option_menu
-import glob
 import pandas as pd
 from plotnine import *
 import plotly.express as px
@@ -15,13 +14,12 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from datetime import datetime
 import folium
-import json
 import branca.colormap as cmp
 import calendar
 import locale
 from PIL import Image
 
-locale.setlocale(locale.LC_ALL, 'esp')
+#locale.setlocale(locale.LC_ALL, 'esp')
 
 capital_eeuu = pd.read_csv('scrapy_weather\\data\\capital_eeuu\\eeuu_states_capital.csv')
 weather_eeuu = pd.read_csv('scrapy_weather\\data\\data_visualization\\weather_eeuu.csv')
