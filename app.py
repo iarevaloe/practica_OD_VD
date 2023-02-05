@@ -21,7 +21,7 @@ from PIL import Image
 
 #locale.setlocale(locale.LC_ALL, 'esp')
 
-capital_eeuu = pd.read_csv('scrapy_weather\\data\\capital_eeuu\\eeuu_states_capital.csv')
+capital_eeuu = pd.read_csv('scrapy_weather/data/capital_eeuu/eeuu_states_capital.csv')
 weather_eeuu = pd.read_csv('scrapy_weather\\data\\data_visualization\\weather_eeuu.csv')
 
 weather_eeuu['date'] = pd.to_datetime(weather_eeuu['date'], format='%Y-%m-%d').dt.date
