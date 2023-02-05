@@ -18,6 +18,7 @@ import branca.colormap as cmp
 import calendar
 import locale
 from PIL import Image
+import json
 
 #locale.setlocale(locale.LC_ALL, 'esp')
 
