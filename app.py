@@ -927,11 +927,13 @@ elif selected == 'Mapas':
                                                      label_visibility='collapsed')
                 title_hmap = variables_temperatura[hmap_variable_to_plot] + ' por semana de la ciudad de ' + return_capital_state(hmap_state_select) + ' (' + hmap_state_select + ')'
                 variable_text_hover = variables_temperatura[hmap_variable_to_plot]
+                color_scale = 'viridis'
             else:
                 hmap_variable_to_plot = 'precipitation'
                 
                 title_hmap= 'Precipitaciones por semana de la ciudad de ' +  return_capital_state(hmap_state_select) + ' (' + hmap_state_select + ')'
                 variable_text_hover = 'Precipitaciones'
+                color_scale = 'Blues'
         
             hmap_year_select = st.selectbox('**Año**',
                                             options=weather_eeuu.year.unique(),
@@ -950,7 +952,7 @@ elif selected == 'Mapas':
         with hmap_col1:
             fig_hmap = px.imshow(hmap_data_to_plot, 
                                  aspect='auto', 
-                                 color_continuous_scale='viridis',
+                                 color_continuous_scale=color_scale,
                                  labels=dict(x='Semana', 
                                              y='Día', 
                                              color=variable_text_hover))
