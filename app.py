@@ -68,10 +68,6 @@ functions = {
 
 functions_2 = {
     'mean': 'Media',
-    'max': 'Máxima'}
-
-functions_3 = {
-    'mean': 'Media',
     'max': 'Máxima',
     'sum': 'Acumulada'}
 
@@ -857,7 +853,7 @@ elif selected == 'Mapas':
                                                      options=['mean',
                                                               'max',
                                                               'sum'],
-                                                     format_func=functions_3.get
+                                                     format_func=functions_2.get
                                                      )
         
         with st.container():
