@@ -7,6 +7,5 @@ plotly
 datetime
 folium
 branca
-calendar
 locale
 PIL
